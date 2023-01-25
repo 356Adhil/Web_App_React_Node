@@ -16,7 +16,10 @@ function AdminHomeComponent() {
       <div className="home_div">
         <h1>Admin Home</h1>
         <div className="options">
-          <div>Users</div>
+          <div onClick={() => {
+          navigate("/admin/users")
+        }
+        }>Users</div>
           <div onClick={handleLogout}>Logout</div>
         </div>
       </div>

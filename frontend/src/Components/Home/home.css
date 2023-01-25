@@ -1,16 +1,16 @@
 .home {
   width: 100vw;
   height: 100vh;
-  background-color: #3aafa9;
+  background-color: #fff;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  gap: 20px;
+  gap: 5px;
 }
 
 .left_div {
-  background-color: #17252a;
-  border-radius: 20px;
+  background-color: #163e30;
+  border-radius: 8px;
   width: 30%;
   height: 75%;
   display: flex;
@@ -23,12 +23,12 @@
 .right_div {
   width: 60%;
   height: 75%;
-  border-radius: 20px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: #17252a;
+  background-color: #163e30;
   color: #fff;
 }
 
@@ -56,18 +56,17 @@
   gap: 30px;
 }
 .profile_div img {
-  width: 284px;
-  border-radius: 50%;
-  height: 249px;
+  width: 270px;
+  border-radius: 4%;
+  height: 270px;
 }
 
 .add_profile_btn input {
-  background-color: #17252a;
-  border: none;
-  outline: none;
-  padding: 10px;
+  cursor: pointer;
   font-size: medium;
-  font-weight: 300;
+  font-weight: 500;
+  width: 300px;
+  height: 45px;
 }
 
 .changeImg_div img {
@@ -85,4 +84,34 @@
 
 .selecte_text {
   align-self: flex-start;
+}
+
+.logOut_btn {
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 800;
+  width: 300px;
+  height: 45px;
+}
+
+.logOut_btn:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #17252a;
+  border-color: #fff;
+}
+
+.img_submit_btn {
+  cursor: pointer;
+  font-size: medium;
+  font-weight: 500;
+  width: 150px;
+  height: 25px;
+}
+
+.img_submit_btn:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #17252a;
+  border-color: #fff;
 }

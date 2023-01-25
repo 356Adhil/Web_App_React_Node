@@ -26,12 +26,12 @@ function AdminUsers() {
     });
   }, [success, auth]);
 
-  const handleChange = (event) => {
-    console.log(event.target.value);
-    setsearch(event.target.value);
-    if (event.target.value !== "") {
+  const handleChange = (e) => {
+    console.log(e.target.value);
+    setsearch(e.target.value);
+    if (e.target.value !== "") {
       const newPacientes = users.filter((value) =>
-        value.name.toLowerCase().includes(event.target.value.toLowerCase())
+        value.name.toLowerCase().includes(e.target.value.toLowerCase())
       );
       console.log(newPacientes);
       setFilteredDocs(newPacientes);
@@ -41,18 +41,18 @@ function AdminUsers() {
   return (
     <div className="users">
       <div className="table_div">
-        <h1>Users</h1>
         <div className="user_options">
           <div className="add_user" onClick={() => {
             navigate("/admin/users/add")
           }}>Add</div>
+
           <div className="search_div">
             <input
               type="text"
               placeholder="Search"
               value={search}
-              onChange={(event) => {
-                handleChange(event);
+              onChange={(e) => {
+                handleChange(e);
               }}
             />
           </div>

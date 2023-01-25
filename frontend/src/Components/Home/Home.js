@@ -82,7 +82,7 @@ function Home() {
               <img src={image ? URL.createObjectURL(image) : ""} alt="" />
             </div>
             <div>
-              <button onClick={handleImageChange}>Submit</button>
+              <button className="img_submit_btn" onClick={handleImageChange}>Submit</button>
             </div>
           </div>
         )}
@@ -100,20 +100,15 @@ function Home() {
         </div>
       </div>
       <div className="right_div">
-        <div className="innerRight">
-          <div className="profile">
-            <div className="innerProfile">
-              <h1>Profile</h1>
-            </div>
-          </div>
           <div className="details">
+        <h2>Profile</h2>
+        <hr />
             <div>Name: {detalis.name}</div> <div> Phone: {detalis.phone}</div>
             <div> Email: {detalis.email}</div>
             <div className="add_profile_btn">
-              <button onClick={handleLogout}>Logout</button>
+              <button className="logOut_btn" onClick={handleLogout}>Logout</button>
             </div>
           </div>
-        </div>
       </div>
     </div>
   );
